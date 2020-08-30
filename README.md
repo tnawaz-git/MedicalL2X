@@ -43,3 +43,7 @@ Omit '--train' when using a trained model
 ----Run in terminal----
 
       python main.py --train --datatype 'heart'
+      
+# EXPLANATION VIDEO
+
+The link to the explanation video: https://www.youtube.com/watch?v=ovVGbiTBSBs
