@@ -20,7 +20,7 @@ Training L2X model on clinical heart failure data set.
 7. Batch Normalization
 8. Training of model based on L2X
 9. Parsing
-10.Epoch-wise results
+10. Epoch-wise results
 
 --- make_data.py contains code for
 1. importing dataset/dataframe generation
