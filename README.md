@@ -1,39 +1,37 @@
-# MedicalL2X
-Using L2X (Learning to Explain) algorithm to train a model on clinical heart failure data set.
+# MEDICAL L2X MODEL TRAINING
+Training L2X model on clinical heart failure data set.
 
-------IMPLEMENTATION OF L2X FOR MEDICAL HEART FAILURE DATASET-------
-
-# Ensure heart_dataset.csv saved in project 'Medical' folder
-# install necessary libraries by running in console:
+- Ensure heart_dataset.csv saved in project 'Medical' folder
+- install necessary libraries by running in console:
       'pip install tensorflow, pandas, numpy, keras, nltk'
-# for python 3.0 or above:
+- for python 3.0 or above:
       'pip3 install tensorflow, pandas, numpy, keras, nltk'
 
 
-------CONTENTS-------
+# CONTENTS
 
-# main.py contains code for
-#    training and validation dataset generation
-#    feature rank calculation
-#    median ranks of selected features
-#    Gumbel-Softmax variables and algorithm
-#    output data shape
-#    Variational approximation
-#    Calculation of Q from X_s
-#    Batch Normalization
-#    Training of model based on L2X
-#    Parsing
-#    Epoch-wise results
+--- main.py contains code for
+1. training and validation dataset generation
+2. feature rank calculation
+3. median ranks of selected features
+4. Gumbel-Softmax variables and algorithm
+5. Variational approximation
+6. Calculation of Q from X_s
+7. Batch Normalization
+8. Training of model based on L2X
+9. Parsing
+10.Epoch-wise results
 
-# make_data.py contains code for
-#    importing dataset/dataframe generation
-#    response variable and input data definition
+--- make_data.py contains code for
+1. importing dataset/dataframe generation
+2. response variable and input data definition
 
 
-------HOW TO RUN-------
+# HOW TO RUN
 
-# To train L2X on the data of heart failure records and generate median ranks of selected features by L2X.
-# Omit '--train' when using a trained model
-# Run in terminal:
+To train L2X on the data of heart failure records and generate median ranks of selected features by L2X.
+Omit '--train' when using a trained model
+
+----Run in terminal----
 
       python main.py --train --datatype 'heart'
