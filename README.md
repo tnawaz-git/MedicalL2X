@@ -1,4 +1,4 @@
-# MEDICAL L2X MODEL TRAINING
+# L2X MODEL TRAINING ON MEDICAL DATA SET
 Training L2X model on clinical heart failure data set.
 
 - Ensure heart_dataset.csv saved in project 'Medical' folder
@@ -7,6 +7,14 @@ Training L2X model on clinical heart failure data set.
 - for python 3.0 or above:
       'pip3 install tensorflow, pandas, numpy, keras, nltk'
 
+# BASIC STEPS OF L2X MODEL
+
+1. Obtain mutual information I(X;Y) between the input vector X and response vector Y.
+2. Derive lower bound on mutual information and approximate conditional distribution Pm.
+3. Apply the Gumbel-Softmax trick to approximate weighted subset sampling for features.
+4. Compute Monte Carlo estimate for gradient of objective function for optimization.
+5. Rank features according to their weights and finally pick features with largest weights as explaining features.
+6. Extract those features and use them in the training the model and optimize loss function for maximum validation accuracy.
 
 # CONTENTS
 
